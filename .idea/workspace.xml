@@ -35,9 +35,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Question_1">
-    <configuration name="Question_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question_1" />
+  <component name="RunManager">
+    <configuration name="Question_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question_6" />
       <module name="Data Structure Assignment" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -52,7 +52,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Question_1" />
+        <item itemvalue="Application.Question_6" />
         <item itemvalue="Application.Question_6" />
       </list>
     </recent_temporary>
