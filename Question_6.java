@@ -1,3 +1,4 @@
+azhar/Q6
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Question_6 {
@@ -80,3 +81,6 @@ public class Question_6 {
         }
     }
 }
+=======
+
+ main
