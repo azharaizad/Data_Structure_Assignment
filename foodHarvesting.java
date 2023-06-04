@@ -1,4 +1,4 @@
-package lab.assignment.question.pkg5;
+package Data_Structure_Assignment;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

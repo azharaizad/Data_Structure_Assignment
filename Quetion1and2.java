@@ -1,3 +1,5 @@
+package Data_Structure_Assignment;
+
 import java.util.*;
 
 public class Quetion1and2 {

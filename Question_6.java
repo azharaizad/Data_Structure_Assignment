@@ -1,4 +1,5 @@
-azhar/Q6
+package Data_Structure_Assignment;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Question_6 {
@@ -81,6 +82,3 @@ public class Question_6 {
         }
     }
 }
-=======
-
- main
