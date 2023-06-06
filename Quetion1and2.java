@@ -27,24 +27,24 @@ public class Quetion1and2 {
         General luMeng = new General("Lu Meng", "Cavalry", 70, 77, 93, 83, 88);
         General huangGai = new General("Huang Gai", "Infantry", 83, 98, 72, 42, 89);
 
-        ArrayList<General> generals = new ArrayList<>();
-        generals.add(zhouYu);
-        generals.add(zhangZhao);
-        generals.add(xuSheng);
-        generals.add(zhuGeJin);
-        generals.add(luSu);
-        generals.add(taiShiCi);
-        generals.add(xiaoQiao);
-        generals.add(daQiao);
-        generals.add(zhouTai);
-        generals.add(ganNing);
-        generals.add(luMeng);
-        generals.add(huangGai);
+        ArrayList<General> general1s = new ArrayList<>();
+        general1s.add(zhouYu);
+        general1s.add(zhangZhao);
+        general1s.add(xuSheng);
+        general1s.add(zhuGeJin);
+        general1s.add(luSu);
+        general1s.add(taiShiCi);
+        general1s.add(xiaoQiao);
+        general1s.add(daQiao);
+        general1s.add(zhouTai);
+        general1s.add(ganNing);
+        general1s.add(luMeng);
+        general1s.add(huangGai);
 
-        for (General general : generals) {
-            TreeNode generalNode = new TreeNode(general);
+        for (General general1 : general1s) {
+            TreeNode generalNode = new TreeNode(general1);
 //            System.out.println(general.getAbilitySum() + " " + general.getName());
-            if (general.getIntelligence() > general.getStrength()) {
+            if (general1.getIntelligence() > general1.getStrength()) {
                 zhangZhaoNode.addChild(generalNode);
             } else {
                 zhouYuNode.addChild(generalNode);
@@ -54,14 +54,14 @@ public class Quetion1and2 {
         System.out.println();
 
         Comparator<General> abilityComparator = Comparator.comparingInt(General::getAbilitySum);
-        Collections.sort(generals, abilityComparator);
+        Collections.sort(general1s, abilityComparator);
         
 // binary search saja saja
         int targetAbility = 294;
-        int index = binarySearch(generals, targetAbility);
+        int index = binarySearch(general1s, targetAbility);
         if (index != -1) {
-            General targetGeneral = generals.get(index);
-            System.out.println("General found with ability " + targetAbility + ": " + targetGeneral.getName());
+            General targetGeneral1 = general1s.get(index);
+            System.out.println("General found with ability " + targetAbility + ": " + targetGeneral1.getName());
         } else {
             System.out.println("General not found with ability " + targetAbility);
         }
@@ -72,23 +72,23 @@ public class Quetion1and2 {
         Comparator<General> strengthComparator = Comparator.comparingInt(General::getStrength).reversed();
         Comparator<General> intelligenceComparator = Comparator.comparingInt(General::getIntelligence).reversed();
 
-        Collections.sort(generals, politicComparator);
-        List<General> politicTeam = formTeam(generals, "politic", 3);
+        Collections.sort(general1s, politicComparator);
+        List<General> politicTeam = formTeam(general1s, "politic", 3);
 
-        Set<General> selectedGenerals = new HashSet<>(politicTeam);
+        Set<General> selectedGeneral1s = new HashSet<>(politicTeam);
 
-        Collections.sort(generals, leadershipComparator);
-        List<General> leadershipTeam = formTeam(generals, "leadership", 3, selectedGenerals);
+        Collections.sort(general1s, leadershipComparator);
+        List<General> leadershipTeam = formTeam(general1s, "leadership", 3, selectedGeneral1s);
 
-        selectedGenerals.addAll(leadershipTeam);
+        selectedGeneral1s.addAll(leadershipTeam);
 
-        Collections.sort(generals, strengthComparator);
-        List<General> strengthTeam = formTeam(generals, "strength", 3, selectedGenerals);
+        Collections.sort(general1s, strengthComparator);
+        List<General> strengthTeam = formTeam(general1s, "strength", 3, selectedGeneral1s);
 
-        selectedGenerals.addAll(strengthTeam);
+        selectedGeneral1s.addAll(strengthTeam);
 
-        Collections.sort(generals, intelligenceComparator);
-        List<General> intelligenceTeam = formTeam(generals, "intelligence", 3, selectedGenerals);
+        Collections.sort(general1s, intelligenceComparator);
+        List<General> intelligenceTeam = formTeam(general1s, "intelligence", 3, selectedGeneral1s);
 
         System.out.println("Politic Team:");
         displayTeam(politicTeam);
@@ -104,17 +104,17 @@ public class Quetion1and2 {
 
     }
 //untuk no 4th param
-    private static List<General> formTeam(List<General> generals, String field, int count) {
+    private static List<General> formTeam(List<General> general1s, String field, int count) {
         List<General> team = new ArrayList<>();
         int remainingCount = count;
 
-        for (General general : generals) {
+        for (General general1 : general1s) {
             if (remainingCount == 0) {
                 break;
             }
 
-            if (isPositiveStat(general, field)) {
-                team.add(general);
+            if (isPositiveStat(general1, field)) {
+                team.add(general1);
                 remainingCount--;
             }
         }
@@ -122,38 +122,38 @@ public class Quetion1and2 {
         return team;
     }
 // for excluding the same repeating generals
-    private static List<General> formTeam(List<General> generals, String field, int count, Set<General> excludedGenerals) {
+    private static List<General> formTeam(List<General> general1s, String field, int count, Set<General> excludedGeneral1s) {
         List<General> team = new ArrayList<>();
         int remainingCount = count;
 
-        for (General general : generals) {
+        for (General general1 : general1s) {
             if (remainingCount == 0) {
                 break;
             }
 
-            if (!excludedGenerals.contains(general) && isPositiveStat(general, field)) {
-                team.add(general);
-                excludedGenerals.add(general);
+            if (!excludedGeneral1s.contains(general1) && isPositiveStat(general1, field)) {
+                team.add(general1);
+                excludedGeneral1s.add(general1);
                 remainingCount--;
             }
         }
 
         return team;
     }
-    private static boolean isPositiveStat(General general, String field) {
+    private static boolean isPositiveStat(General general1, String field) {
         int stat;
         switch (field) {
             case "politic":
-                stat = general.getPolitics();
+                stat = general1.getPolitics();
                 break;
             case "leadership":
-                stat = general.getLeadership();
+                stat = general1.getLeadership();
                 break;
             case "strength":
-                stat = general.getStrength();
+                stat = general1.getStrength();
                 break;
             case "intelligence":
-                stat = general.getIntelligence();
+                stat = general1.getIntelligence();
                 break;
             default:
                 return false;
@@ -162,23 +162,23 @@ public class Quetion1and2 {
     }
 
     private static void displayTeam(List<General> team) {
-        for (General general : team) {
-            System.out.println("Name: " + general.getName() +
-                    ", Politic: " + general.getPolitics() +
-                    ", Leadership: " + general.getLeadership() +
-                    ", Strength: " + general.getStrength() +
-                    ", Intelligence: " + general.getIntelligence() +
-                    ", Ability Sum: " + general.getAbilitySum());
+        for (General general1 : team) {
+            System.out.println("Name: " + general1.getName() +
+                    ", Politic: " + general1.getPolitics() +
+                    ", Leadership: " + general1.getLeadership() +
+                    ", Strength: " + general1.getStrength() +
+                    ", Intelligence: " + general1.getIntelligence() +
+                    ", Ability Sum: " + general1.getAbilitySum());
         }
     }
 
-    private static int binarySearch(List<General> generals, int targetAbility) {
+    private static int binarySearch(List<General> general1s, int targetAbility) {
         int left = 0;
-        int right = generals.size() - 1;
+        int right = general1s.size() - 1;
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            int ability = generals.get(mid).getAbilitySum();
+            int ability = general1s.get(mid).getAbilitySum();
 
             if (ability == targetAbility) {
                 return mid;

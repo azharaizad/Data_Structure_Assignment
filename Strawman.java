@@ -1,3 +1,4 @@
+
 import java.util.Random;
 public class Strawman {
     private int StrawmanNum;
@@ -34,4 +35,3 @@ public class Strawman {
         return (int) (((double)StrawmanNum/100)*arrow);
     }
 }
-
