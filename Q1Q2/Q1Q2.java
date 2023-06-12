@@ -49,6 +49,45 @@ public class Q1Q2 {
             }
         }
         sunQuanNode.displayTree();
+        DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("Sun Quan");
+
+        DefaultMutableTreeNode zhouYuNode1 = new DefaultMutableTreeNode("Zhou Yu");
+        rootNode.add(zhouYuNode1);
+
+        DefaultMutableTreeNode zhangZhaoNode1 = new DefaultMutableTreeNode("Zhang Zhao");
+        rootNode.add(zhangZhaoNode1);
+
+        DefaultMutableTreeNode xuShengNode = new DefaultMutableTreeNode("Xu Sheng");
+        zhangZhaoNode1.add(xuShengNode);
+
+        DefaultMutableTreeNode zhuGeJinNode = new DefaultMutableTreeNode("Zhu Ge Jin");
+        zhangZhaoNode1.add(zhuGeJinNode);
+
+        DefaultMutableTreeNode luSuNode = new DefaultMutableTreeNode("Lu Su");
+        zhangZhaoNode1.add(luSuNode);
+
+        DefaultMutableTreeNode taiShiCiNode = new DefaultMutableTreeNode("Tai Shi Ci");
+        zhouYuNode1.add(taiShiCiNode);
+
+        DefaultMutableTreeNode xiaoQiaoNode = new DefaultMutableTreeNode("Xiao Qiao");
+        zhouYuNode1.add(xiaoQiaoNode);
+
+        DefaultMutableTreeNode daQiaoNode = new DefaultMutableTreeNode("Da Qiao");
+        zhouYuNode1.add(daQiaoNode);
+
+        DefaultMutableTreeNode zhouTaiNode = new DefaultMutableTreeNode("Zhou Tai");
+        zhouYuNode1.add(zhouTaiNode);
+
+        DefaultMutableTreeNode ganNingNode = new DefaultMutableTreeNode("Gan Ning");
+        zhouYuNode1.add(ganNingNode);
+
+        DefaultMutableTreeNode luMengNode = new DefaultMutableTreeNode("Lu Meng");
+        zhouYuNode1.add(luMengNode);
+
+        DefaultMutableTreeNode huangGaiNode = new DefaultMutableTreeNode("Huang Gai");
+        zhouYuNode1.add(huangGaiNode);
+
+        TreeGUI treeGUI = new TreeGUI(rootNode);
         System.out.println();
 
         Comparator<General> abilityComparator = Comparator.comparingInt(General::getAbilitySum);
