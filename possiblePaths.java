@@ -90,7 +90,7 @@ public class possiblePaths {
         
         //set starting node & enemy base camp
         int startNode = 1;
-        System.out.println("Enter the base camp for the enemy base camp: ");
+        System.out.print("Enter the base camp for the enemy base camp: ");
         int enemyBase = sc.nextInt();
         
         List<List<Integer>> paths = bestPaths(graph,startNode,enemyBase);

@@ -1,3 +1,5 @@
+package Data_Structure_Assignment;
+
 public class Boats {
     private Strawman Front,Left,Right,Back;
     private String Direction;

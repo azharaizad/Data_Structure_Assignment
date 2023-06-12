@@ -1,7 +1,6 @@
 package Data_Structure_Assignment;
 
 import java.util.*;
-
 public class Quetion1and2 {
     public static void main(String[] args) {
         General sunQuan = new General("Sun Quan", "Emperor", 96, 98, 72, 77, 95);
@@ -57,7 +56,9 @@ public class Quetion1and2 {
         Collections.sort(general1s, abilityComparator);
         
 // binary search saja saja
-        int targetAbility = 294;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter specific sum of ability: ");
+        int targetAbility = sc.nextInt();
         int index = binarySearch(general1s, targetAbility);
         if (index != -1) {
             General targetGeneral1 = general1s.get(index);

@@ -1,4 +1,4 @@
-package lab.assignment.question.pkg5;
+package Data_Structure_Assignment;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -33,7 +33,7 @@ public class foodHarvesting {
         graph.addEdge(8, 10);
         graph.addEdge(9, 10);
         
-        System.out.println("Enter node without food: ");
+        System.out.print("Enter node without food: ");
         Scanner sc = new Scanner(System.in);
         int nodeWOFood = sc.nextInt();
 
@@ -41,7 +41,11 @@ public class foodHarvesting {
 
         System.out.println("Path:");
         for (int node : path) {
-            System.out.print(node + " -> ");
+            System.out.print(node+"->");
+            if(node==path.size()) {
+                System.out.print(path.get(0));
+                break;
+            }
         }
         System.out.println();
     }

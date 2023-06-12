@@ -1,3 +1,5 @@
+package Data_Structure_Assignment;
+
 public class Q3 {
 
     /**
@@ -20,6 +22,7 @@ public class Q3 {
         System.out.println("Left: " + arrowsCollectedLeft);
         System.out.println("Right: " + arrowsCollectedRight);
         System.out.println("Back: " + arrowsCollectedBack);
+        System.out.println("Total: "+ (arrowsCollectedRight+arrowsCollectedBack+arrowsCollectedFront+arrowsCollectedLeft));
     }
     
 }
