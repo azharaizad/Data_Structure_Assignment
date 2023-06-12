@@ -24,5 +24,3 @@ public class Q3 {
         System.out.println("Back: " + arrowsCollectedBack);
         System.out.println("Total: "+ (arrowsCollectedRight+arrowsCollectedBack+arrowsCollectedFront+arrowsCollectedLeft));
     }
-    
-}
