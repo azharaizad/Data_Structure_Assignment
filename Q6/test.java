@@ -1,4 +1,4 @@
-package Data_Structure_Assignment.Q6;
+package Q6;
 
 public class test {
 }

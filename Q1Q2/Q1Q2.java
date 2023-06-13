@@ -1,7 +1,8 @@
+package Q1Q2;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.util.*;
 
-public class Main {
+public class Q1Q2 {
     public static void main(String[] args) {
         General sunQuan = new General("Sun Quan", "Emperor", 96, 98, 72, 77, 95);
         TreeNode sunQuanNode = new TreeNode(sunQuan);

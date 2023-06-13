@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "mainUI",
+            "request": "launch",
+            "mainClass": "mainUI",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "MainUI",
+            "request": "launch",
+            "mainClass": "MainUI",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Q1Q2",
+            "request": "launch",
+            "mainClass": "Q1Q2.Q1Q2",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "Q3",
+            "request": "launch",
+            "mainClass": "Q3.Q3",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "FoodProduction",
+            "request": "launch",
+            "mainClass": "Q4Q5.FoodProduction",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "foodHarvesting",
+            "request": "launch",
+            "mainClass": "Q4Q5.foodHarvesting",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "possiblePaths",
+            "request": "launch",
+            "mainClass": "Q4Q5.possiblePaths",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "Q6",
+            "request": "launch",
+            "mainClass": "Q6.Q6",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "BattleshipClusters",
+            "request": "launch",
+            "mainClass": "Q7Q8.BattleshipClusters",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "HuaRongRoadEscape",
+            "request": "launch",
+            "mainClass": "Q7Q8.HuaRongRoadEscape",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "MainUI",
+            "request": "launch",
+            "mainClass": "UI.MainUI",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8",
+            "vmArgs": "--module-path \"c:/Users/aizad/javafx-sdk-17.0.7/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
