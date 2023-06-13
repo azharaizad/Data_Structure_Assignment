@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Q6.Test",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "Q6.test",
+            "projectName": "Data_Structure_Assignment-1_e7158bf8"
+        },
+        {
+            "type": "java",
             "name": "mainUI",
             "request": "launch",
             "mainClass": "mainUI",
