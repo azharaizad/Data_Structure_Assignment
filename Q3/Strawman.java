@@ -1,39 +1,57 @@
-package Q3;
+package Q3_DS_Assignment;
 
-import java.util.Random;
 public class Strawman {
-    private int StrawmanNum;
-    private int Efficiency=100;
-    private int percentage_decrease;
-    private int usage1 = 0;
-    private int usage2 = 0;
-    private Random r = new Random();
+    private String direction;
+    private int unit;
+    private int arrowReceived;
+    private int used;
+    
+    public Strawman(String direction, int unit){
+        this.direction = direction;
+        this.unit = unit;
+        this.used = 0;
+    }
+    
+    public Strawman(){
+        
+    }
 
-    public Strawman(int strawman_num){
-        this.StrawmanNum=strawman_num;
+    public void setDirection(String direction) {
+        this.direction = direction;
     }
-    public void Decreased(){
-        percentage_decrease = Efficiency/3 + r.nextInt(5);
-        Efficiency = Efficiency - percentage_decrease;
-        StrawmanNum = (int)((double)Efficiency/100*StrawmanNum);
-    }
-    public int GetStrawManLeft(){
-        if(usage1 == 0){
-            usage1++;
-            return StrawmanNum;
-        }
-        else{
-            usage1++;
-            Decreased();
-            return StrawmanNum;
-        }
 
+    public void setUnit(int unit) {
+        this.unit = unit;
     }
-    public int GetEfficiencyLeft(){
-        return Efficiency;
+    
+    public void setArrowReceived(int arrowReceived){
+        this.arrowReceived = arrowReceived;
     }
-    public int ArrowCollected(int arrow){
-        return (int) (((double)StrawmanNum/100)*arrow);
+
+    public void setUsed(int used) {
+        this.used = used;
     }
+    
+    public String getDirection(){
+        return direction;
+    }
+    
+    public int getUnit(){
+        return unit;
+    }
+    
+    public int getArrowReceived(){
+        return arrowReceived;
+    }
+
+    public int getUsed() {
+        return used;
+    }
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Arrow.BAselectionBar();
+    }
+
 }
-
+        
