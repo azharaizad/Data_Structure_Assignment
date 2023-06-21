@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Strawman",
+            "request": "launch",
+            "mainClass": "Q3.Strawman",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Strawman",
+            "request": "launch",
+            "mainClass": "Q3_DS_Assignment.Strawman",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "Q6.Test",

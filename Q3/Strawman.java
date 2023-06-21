@@ -1,4 +1,4 @@
-package Q3_DS_Assignment;
+package Q3;
 
 public class Strawman {
     private String direction;
